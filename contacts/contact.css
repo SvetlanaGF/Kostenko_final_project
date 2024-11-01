@@ -1,7 +1,9 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 body {
@@ -102,6 +104,7 @@ main {
   font-size: 16px;
 }
 
+/* Форма для отправки сообщения */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -163,8 +166,17 @@ footer {
 }
 
 
+@media (max-width: 880px) {
+  .contact-info {
+      flex-direction: column; /* Меняем направление на вертикальное */
+      align-items: center; /* Центрируем элементы по горизонтали */
+  }
 
-
+  .contact-item {
+      width: 50%;
+      margin-bottom: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .header__logo {
@@ -211,7 +223,7 @@ footer {
       /* max-width: calc(100% - 10px); */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
   }
-  /* .menu {
+  .menu {
       display: none;
       position: absolute;
       top: 50px;
@@ -219,7 +231,7 @@ footer {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
       border-radius: 10px;
-    } */
+    }
     
     .menu ul {
       list-style: none;
@@ -241,18 +253,6 @@ footer {
       display: block;
     }
 
-    .body_container {
-      flex-direction: column; /* Меняем направление на вертикальное для мобильных устройств */
-      align-items: center; /* Центрируем элементы по горизонтали */
-      gap: 10px; /* Уменьшаем отступ между секциями */
-  }
-
-  .body_container_text {
-      margin-left: 0; /* Убираем левый отступ на мобильных устройствах */
-      text-align: center; /* Центрируем текст на мобильных устройствах */
-      padding: 0 20px; /* Добавляем отступы по бокам для удобства чтения */
-  }
-
   h1, h2 {
       font-size: 20; /* Уменьшаем размер заголовков на мобильных устройствах */
   }
@@ -261,16 +261,18 @@ footer {
       font-size: 16; /* Уменьшаем размер текста абзацев на мобильных устройствах */
   }
 
-  .body_container_image {
-      flex-basis: auto; /* Убираем фиксированную ширину для изображения на мобильных устройствах */
-      width: 100%; /* Занимаем всю ширину контейнера на мобильных устройствах */
-      justify-content: center; /* Центрируем изображение по горизонтали */
-      align-items: center; /* Центрируем изображение по вертикали, если нужно */
-  }
-
-  .body_container_image .image {
-      width: 100%; /* Изображение занимает всю ширину контейнера на мобильных устройствах */
-      height: auto; /* Сохраняет пропорции изображения */
-  }
 }
 
+@media (max-width: 580px) {
+  .contact-item {
+      width: auto;
+  }
+
+  .contact-item h2 {
+      font-size: 14px;
+  }
+
+  .contact-item p {
+      font-size: 14px;
+  }
+}
