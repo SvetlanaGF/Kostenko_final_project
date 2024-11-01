@@ -56,45 +56,6 @@
     display: none; /* Скрываем бургер-меню по умолчанию */
 }
 
-@media (max-width: 768px) {
-    .header__logo {
-        display: none; /* Скрываем логотип на мобильных устройствах */
-    }
-
-    .header__nav {
-        display: none; /* Скрываем обычное меню на мобильных устройствах */
-    }
-
-    .burger-menu {
-        display: flex; /* Показываем бургер-меню на мобильных устройствах */
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 10;
-    }
-
-    .menu {
-        display: none; /* Скрываем меню по умолчанию */
-    }
-
-    .menu.active {
-        display: block; /* Показываем меню при активном состоянии */
-        position: absolute; /* Позиционируем меню */
-        top: 50px; /* Располагаем ниже бургер-меню */
-        left: 10px; /* Выравниваем влево */
-        background-color: rgba(0, 0, 0, 0.8); /* Фон меню */
-        padding: 20px; /* Отступы внутри меню */
-        border-radius: 10px; /* Скругление углов */
-        max-width: calc(100% - 40px); /* Ограничиваем ширину меню */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
-    }
-}
-
-
-
-
-
-
 
 /* стили для блоков */
 body {
@@ -176,45 +137,38 @@ footer {
     padding-bottom: 10px;
     }
 
-/* Медиазапрос для планшетов */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Меняем направление на вертикальное */
-        align-items: flex-start; /* Выравниваем элементы по левому краю */
-    }
 
-    .header__item {
-        margin-left: 0; /* Убираем отступы между пунктами меню */
-        margin-top: 10px; /* Добавляем отступ сверху между пунктами */
-    }
 
-    .body_container {
-        flex-direction: column; /* Меняем направление на вертикальное */
+    @media (max-width: 768px) {
+        .header__logo {
+            display: none; /* Скрываем логотип на мобильных устройствах */
+        }
+    
+        .header__nav {
+            display: none; /* Скрываем обычное меню на мобильных устройствах */
+        }
+    
+        .burger-menu {
+            display: flex; /* Показываем бургер-меню на мобильных устройствах */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+    
+        .menu {
+            display: none; /* Скрываем меню по умолчанию */
+        }
+    
+        .menu.active {
+            display: block; /* Показываем меню при активном состоянии */
+            position: absolute; /* Позиционируем меню */
+            top: 50px; /* Располагаем ниже бургер-меню */
+            left: 10px; /* Выравниваем влево */
+            background-color: rgba(0, 0, 0, 0.8); /* Фон меню */
+            padding: 20px; /* Отступы внутри меню */
+            border-radius: 10px; /* Скругление углов */
+            max-width: calc(100% - 40px); /* Ограничиваем ширину меню */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
+        }
     }
-
-    .body_container_image {
-        flex: none; /* Убираем фиксированную ширину */
-        width: 100%; /* Занимаем всю ширину контейнера */
-        justify-content: center; /* Центрируем изображение */
-    }
-
-    .body_container_image .image {
-        width: 100%; /* Изображение занимает всю ширину контейнера */
-        height: auto; /* Сохраняет пропорции изображения */
-    }
-}
-
-/* Медиазапрос для мобильных устройств */
-@media (max-width: 480px) {
-    h1, h2 {
-        font-size: 20px; /* Уменьшаем размер заголовков */
-    }
-
-    p {
-        font-size: 18px; /* Уменьшаем размер текста абзацев */
-    }
-
-    .header__logo {
-        display: none;
-    }
-}
