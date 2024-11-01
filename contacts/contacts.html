@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Светлана Костенко – техспец по GetCourse</title>
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contacts.css" />
     <link rel="icon" type="image/png" href="../img/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
     <link rel="shortcut icon" href="../img/favicon.ico" />
@@ -21,8 +21,7 @@
               <li class="header__item"><a class="header__link" href="../about/about.html">Обо мне</a></li>
               <li class="header__item"><a class="header__link" href="../experience/exp.html">Опыт работы</a></li>
               <li class="header__item"><a class="header__link" href="../services/services.html">Перечень услуг</a></li>
-              <li class="header__item"><a class="header__link" href="../portfolio/potrfolio.html">Портфолио</a></li>
-              <li class="header__item"><a class="header__link__active" href="../portfolio/potrfolio.html">Проект 1</a></li>
+              <li class="header__item"><a class="header__link__active" href="../portfolio/potrfolio.html">Портфолио</a></li>
               <li class="header__item"><a class="header__link" href="../contacts/contacts.html">Контакты</a></li>
           </ul>
       </nav>
@@ -39,35 +38,59 @@
                 <li class="header__item"><a class="header__link" href="../about/about.html">Обо мне</a></li>
                 <li class="header__item"><a class="header__link" href="../experience/exp.html">Опыт работы</a></li>
                 <li class="header__item"><a class="header__link" href="../services/services.html">Перечень услуг</a></li>
-                <li class="header__item"><a class="header__link" href="../portfolio/potrfolio.html">Портфолио</a></li>
-                <li class="header__item"><a class="header__link__active" href="../portfolio/potrfolio.html">Проект 1</a></li>
+                <li class="header__item"><a class="header__link__active" href="../portfolio/potrfolio.html">Портфолио</a></li>
                 <li class="header__item"><a class="header__link" href="../contacts/contacts.html">Контакты</a></li>
               </ul>
           </nav>
       </div>
     </header>
 
-    <!-- О проектах -->
-    <div class="about__project">
-      <section class="block_about__project">
-              <p class="about__project__title">Лендинг для регистрации на марфон</p>
-              <p class="about__project__text">Задача: собрать лендинг-визитку школы с указанием тарифов на предлагаемые курсы.</p>
-      </section>
-    </div>
+    <main>
+        <section class="contact-header">
+          <h2 class="contact-header__h2">Открыта к работе в новом проекте<br>или сотрудничеству для выполнения разового заказа</h2>
+          <p class="contact-header__p">Вы можете оставить заявку или связаться напрямую по контактам ниже.</p>
+        </section>
   
-      <!-- Проект -->
-    <div class="project_img">
-      <section class="block__project_img">
-            <img class="block__projects_img" src="img/lending_buh.png">
-      </section>
-    </div>
-
-
-  <!-- Подвал -->
+        <section class="contact-form">
+          <h2 class="contact-form_h2">Оставьте заявку, и я отвечу вам в течение часа</h2>
+            <form action="submit.php" method="POST" id="contactForm">
+  
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required />
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+  
+            <button type="submit">Отправить</button>
+          </form>
+        </section>
+  
+        <section class="contact-info">
+          <div class="contact-item">
+            <h2>Отправьте письмо на почту</h2>
+            <p><a href="mailto:kostenko_sv_a@mail.com">kostenko_sv_a@mail.ru</a></p>
+          </div>
+  
+          <div class="contact-item">
+            <h2>Свяжитесь со мной в Telegram</h2>
+            <p><a href="https://t.me/kostenko_sa" target="_blank">@kostenko_sa</a></p>
+          </div>
+  
+          <div class="contact-item">
+            <h2>Оставьте сообщение в ВК</h2>
+            <p><a href="https://vk.com/kostenko_ksa" target="_blank">https://vk.com/kostenko_ksa</a></p>
+          </div>
+        </section>
+  
+      </main>
+      <!-- Подвал -->
   <footer>
     <p>© 2024 Моё Портфолио. Все права защищены.</p>
   </footer>
 
-    <script src="potrfolio.js"></script>
+    <script src="contacts.js"></script>
   </body>
 </html>
