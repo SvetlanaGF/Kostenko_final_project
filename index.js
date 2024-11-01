@@ -1,7 +1,15 @@
 document.getElementById('learn-more').addEventListener('click', function() {
-    alert('Привет, помогу настроить онлайн-школу на Геткурс (GetCourse)');
-    // Можно добавить переход на следующую страницу или появление дополнительной информации.
+    const userConfirmed = confirm('Привет, помогу настроить онлайн-школу на Геткурс (GetCourse). Хотите перейти на страницу "Портфолио"?');
+    
+    if (userConfirmed) {
+        // Переход на страницу "Портфолио"
+        window.location.href = 'portfolio/potrfolio.html';
+    } else {
+        // Пользователь отказался от перехода
+        alert('Вы остались на этой странице.');
+    }
 });
+
 
 // Плавная анимация кнопки при загрузке страницы
 window.onload = function() {
