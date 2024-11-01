@@ -151,7 +151,7 @@ footer {
         .header {
             padding-bottom: 40px;
         }
-            .burger-menu {
+        .burger-menu {
             display: flex; /* Показываем бургер-меню на мобильных устройствах */
             position: absolute;
             top: 10px;
@@ -177,10 +177,72 @@ footer {
             position: absolute; /* Позиционируем меню */
             top: 50px; /* Располагаем ниже бургер-меню */
             left: 10px; /* Выравниваем влево */
-            background-color: rgba(0, 0, 0, 0.8); /* Фон меню */
+            background-color: #2e0c79;
             padding: 20px; /* Отступы внутри меню */
-            border-radius: 10px; /* Скругление углов */
-            max-width: calc(100% - 40px); /* Ограничиваем ширину меню */
+            border-radius: 10px;
+             /* Ограничиваем ширину меню */
+            /* max-width: calc(100% - 10px); */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
+        }
+        /* .menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+          } */
+          
+          .menu ul {
+            list-style: none;
+            padding: 0;
+          }
+          
+          .menu ul li {
+            margin: 10px 0;
+          }
+          
+          .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+          }
+          
+          /* Анимация для открытия меню */
+          .menu.open {
+            display: block;
+          }
+
+          .body_container {
+            flex-direction: column; /* Меняем направление на вертикальное для мобильных устройств */
+            align-items: center; /* Центрируем элементы по горизонтали */
+            gap: 10px; /* Уменьшаем отступ между секциями */
+        }
+    
+        .body_container_text {
+            margin-left: 0; /* Убираем левый отступ на мобильных устройствах */
+            text-align: center; /* Центрируем текст на мобильных устройствах */
+            padding: 0 20px; /* Добавляем отступы по бокам для удобства чтения */
+        }
+    
+        h1, h2 {
+            font-size: 2em; /* Уменьшаем размер заголовков на мобильных устройствах */
+        }
+    
+        p {
+            font-size: 1.5em; /* Уменьшаем размер текста абзацев на мобильных устройствах */
+        }
+    
+        .body_container_image {
+            flex-basis: auto; /* Убираем фиксированную ширину для изображения на мобильных устройствах */
+            width: 100%; /* Занимаем всю ширину контейнера на мобильных устройствах */
+            justify-content: center; /* Центрируем изображение по горизонтали */
+            align-items: center; /* Центрируем изображение по вертикали, если нужно */
+        }
+    
+        .body_container_image .image {
+            width: 100%; /* Изображение занимает всю ширину контейнера на мобильных устройствах */
+            height: auto; /* Сохраняет пропорции изображения */
         }
     }
