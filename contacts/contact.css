@@ -136,9 +136,10 @@ main {
   margin-bottom: 10px;
 }
 .contact-form textarea {
-  height: 40px; /* Уменьшаем высоту текстового поля */
+  height: 40px;
   /*resize: none;  Запрещаем изменение размера пользователем */
 }
+
 .contact-form button {
   display: block;
   width: 100%;
@@ -153,6 +154,26 @@ main {
 
 .contact-form button:hover {
   background-color: #af1a1a;
+}
+
+
+.alert {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.alert-success {
+  background-color: #d4edda; /* Цвет фона для успешного сообщения */
+  color: #155724; /* Цвет текста для успешного сообщения */
+  border: 1px solid #c3e6cb; /* Цвет границы для успешного сообщения */
+}
+
+.alert-error {
+  background-color: #f8d7da; /* Цвет фона для сообщения об ошибке */
+  color: #721c24; /* Цвет текста для сообщения об ошибке */
+  border: 1px solid #f5c6cb; /* Цвет границы для сообщения об ошибке */
 }
 
 footer {

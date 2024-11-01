@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "portfolio";
+$dbname = "orders2024";
 
 // Подключение к базе данных
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,13 +19,14 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // SQL-запрос для вставки данных в таблицу
-$sql = "INSERT INTO contacts (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO orders (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Заявка успешно отправлена!";
 } else {
     echo "Ошибка: " . $sql . "<br>" . $conn->error;
 }
+
 
 // Закрытие соединения
 $conn->close();
