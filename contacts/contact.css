@@ -16,18 +16,12 @@ body {
   color: #ffffff;
   display: flex; /* Используем Flexbox для расположения элементов рядом */
   align-items: center; /* Выравниваем элементы по центру по вертикали */
-  padding: 10px 20px;
-}
-
-.header__logo {
-  z-index: 1; /* Устанавливаем z-index для логотипа */
+  padding: 10px 230px;
 }
 
 .header__nav {
   display: flex;
   margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
-  justify-content: space-between; /* Равномерно распределяем пункты меню */
-  flex-grow: 1; /* Позволяем навигации занимать оставшееся пространство */
 }
 
 .header__list {
@@ -36,11 +30,11 @@ body {
 }
 
 .header__item {
-  margin-left: 100px; /* Отступ между пунктами меню */
+  margin-left: 20px; /* Отступ между пунктами меню */
 }
 
 .header__link {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -50,7 +44,7 @@ body {
   text-decoration-thickness: 3px;
 }
 
-.header__link__active {
+.header__link-active {
   color: #bfb0df; /* Цвет для активного пункта меню */
   text-decoration-thickness: 3px;
 }
