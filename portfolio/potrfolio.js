@@ -49,22 +49,3 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     }
 });
 
-// Увеличиваем и уменьшаем изображение, если на него тапнуть
-
-// Получаем все изображения с классом .block__projects__image
-const projectImages = document.querySelectorAll('.block__projects__image');
-
-// Добавляем обработчик события для каждого изображения
-projectImages.forEach(image => {
-    image.addEventListener('click', () => {
-        // Переключаем класс full-width у изображения при клике
-        image.classList.toggle('full-width');
-        
-        // Если изображение увеличено, отключаем прокрутку страницы
-        if (image.classList.contains('full-width')) {
-            document.body.style.overflow = 'hidden'; // Отключаем прокрутку
-        } else {
-            document.body.style.overflow = ''; // Включаем прокрутку обратно
-        }
-    });
-});
