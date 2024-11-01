@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +45,7 @@ body {
   text-decoration-thickness: 3px;
 }
 
-.header__link-active {
+.header__link__active {
   color: #bfb0df; /* Цвет для активного пункта меню */
   text-decoration-thickness: 3px;
 }
@@ -59,7 +58,7 @@ body {
 /* Заголовки и блоки */
 
 main {
-  padding: 20px 20px 0px;
+  padding: 20px;
 }
 
 .contact-header {
@@ -89,6 +88,7 @@ main {
 .contact-item {
   background-color: #fff;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
   text-align: center;

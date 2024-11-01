@@ -44,7 +44,7 @@ body {
   text-decoration-thickness: 3px;
 }
 
-.header__link-active {
+.header__link__active {
   color: #bfb0df; /* Цвет для активного пункта меню */
   text-decoration-thickness: 3px;
 }

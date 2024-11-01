@@ -39,7 +39,7 @@ body {
 }
 
 .header__link:hover {
-  color: #abc3f7; /* Цвет текста при наведении */
+  color: #7ba0f0; /* Цвет текста при наведении */
   text-decoration: underline; /* Подчеркивание текста при наведении */
   text-decoration-thickness: 3px;
 }
@@ -109,9 +109,14 @@ body {
   padding: 40px;
   flex-wrap: wrap; /* Позволяем изображениям переноситься на следующую строку при необходимости */
 }
+.block__projects__link {
+  flex: 1; /* Каждый элемент занимает равное пространство */
+  max-width: 30%;
+  text-align: center;
+}
 
 .block__projects__image {
-  max-width: 30%;
+  max-width: 100%;
   height: auto;
   box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
   transition: transform 0.3s ease;

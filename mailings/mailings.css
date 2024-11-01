@@ -38,15 +38,15 @@ body {
   text-decoration: none;
 }
 
-/* Стили для наведения на пункты меню */
 .header__link:hover {
   color: #7ba0f0; /* Цвет текста при наведении */
   text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
 }
 
-/* Добавляем стиль для активного пункта меню */
 .header__link__active {
   color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
 }
 
  /* Скрываем бургер-меню по умолчанию */

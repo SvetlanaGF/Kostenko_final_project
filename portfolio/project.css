@@ -39,7 +39,7 @@ body {
 }
 
 .header__link:hover {
-  color: #abc3f7; /* Цвет текста при наведении */
+  color: #7ba0f0; /* Цвет текста при наведении */
   text-decoration: underline; /* Подчеркивание текста при наведении */
   text-decoration-thickness: 3px;
 }
