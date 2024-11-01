@@ -4,9 +4,6 @@ document.getElementById('learn-more').addEventListener('click', function() {
     if (userConfirmed) {
         // Переход на страницу "Портфолио"
         window.location.href = 'portfolio/potrfolio.html';
-    } else {
-        // Пользователь отказался от перехода
-        alert('Вы остались на этой странице.');
     }
 });
 
@@ -25,13 +22,12 @@ window.onload = function() {
 
 console.log('Скрипт загружен');
 
-// const burgerMenu = document.querySelector('.burger-menu');
-// const menu = document.querySelector('.menu');
-// burgerMenu.addEventListener('click', () => {
-//     menu.classList.toggle('active');
-// });
+// Находим элементы бургер-меню и меню
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
 
-document.getElementById('burger-icon').addEventListener('click', function() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active'); // Переключаем класс active для отображения/скрытия меню
+// Добавляем обработчик события клика на бургер-меню
+burgerMenu.addEventListener('click', () => {
+ // Переключаем класс active для отображения/скрытия меню
+    menu.classList.toggle('active');
 });

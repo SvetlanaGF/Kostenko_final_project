@@ -1,12 +1,18 @@
+// Бургер-меню
 
 console.log('Скрипт загружен');
 
+// Находим элементы бургер-меню и меню
 const burgerMenu = document.querySelector('.burger-menu');
 const menu = document.querySelector('.menu');
+
+// Добавляем обработчик события клика на бургер-меню
 burgerMenu.addEventListener('click', () => {
+ // Переключаем класс active для отображения/скрытия меню
     menu.classList.toggle('active');
 });
 
+// Валидация формы перед отправкой
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     let formIsValid = true;
 
@@ -43,13 +49,22 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     }
 });
 
-// Hover effect on projects
-document.querySelectorAll('.project').forEach((project) => {
-    project.addEventListener('mouseover', function () {
-        this.style.backgroundColor = '#f9f9f9';
-    });
+// Увеличиваем и уменьшаем изображение, если на него тапнуть
 
-    project.addEventListener('mouseout', function () {
-        this.style.backgroundColor = '#fff';
+// Получаем все изображения с классом .block__projects__image
+const projectImages = document.querySelectorAll('.block__projects__image');
+
+// Добавляем обработчик события для каждого изображения
+projectImages.forEach(image => {
+    image.addEventListener('click', () => {
+        // Переключаем класс full-width у изображения при клике
+        image.classList.toggle('full-width');
+        
+        // Если изображение увеличено, отключаем прокрутку страницы
+        if (image.classList.contains('full-width')) {
+            document.body.style.overflow = 'hidden'; // Отключаем прокрутку
+        } else {
+            document.body.style.overflow = ''; // Включаем прокрутку обратно
+        }
     });
 });

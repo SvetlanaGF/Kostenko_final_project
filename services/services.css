@@ -164,7 +164,7 @@ footer {
       /* max-width: calc(100% - 10px); */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
   }
-  /* .menu {
+ .menu {
       display: none;
       position: absolute;
       top: 50px;
@@ -172,7 +172,7 @@ footer {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
       border-radius: 10px;
-    } */
+    }
     
     .menu ul {
       list-style: none;

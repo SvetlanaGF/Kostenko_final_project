@@ -78,24 +78,24 @@ body {
 }
 
 .about__projects {
-  padding: 20px; /* Отступы вокруг секции */
+  padding: 20px;
 }
 
 .about__projects__list {
   display: flex; /* Используем Flexbox для расположения пунктов списка в ряд */
   justify-content: space-between; /* Равномерно распределяем пункты по ширине */
   list-style-type: none; /* Убираем стандартные маркеры списка */
-  padding: 0; /* Убираем отступы у списка */
+  padding: 0;
 }
 
 .about__projects__list_item {
   flex: 1; /* Каждый элемент занимает равное пространство */
-  margin: 0 10px; /* Отступы между пунктами списка */
-  padding: 10px; /* Внутренние отступы для удобства чтения */
-  background-color: #f0f0f0; /* Цвет фона для элементов списка */
-  border-radius: 5px; /* Скругление углов для элементов списка */
-  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8); /* Легкая тень для глубины */
-  text-align: center; /* Центрируем текст внутри элементов списка */
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #f0f0f0; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+  text-align: center;
 }
 
 /* Стили для раздела с изображениями */
@@ -103,23 +103,33 @@ body {
 .block__projects {
   display: flex; /* Используем Flexbox для расположения изображений в ряд */
   justify-content: space-between; /* Равномерно распределяем изображения по ширине */
-  align-items: center; /* Выравниваем изображения по центру по вертикали */
+  align-items: flex-start;
+  /* align-items: center; */
   margin: auto;
-  padding: 40px; /* Отступы вокруг секции */
+  padding: 40px;
   flex-wrap: wrap; /* Позволяем изображениям переноситься на следующую строку при необходимости */
 }
 
 .block__projects__image {
-  max-width: 30%; /* Ограничиваем максимальную ширину изображений до 30% */
-  height: auto; /* Сохраняем пропорции изображения */
-  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8); /* Добавляем тень для глубины */
-  transition: transform 0.3s ease; /* Плавный переход для анимации */
+  max-width: 30%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+  transition: transform 0.3s ease;
 }
 
 .block__projects__image:hover {
   transform: scale(1.1); /* Увеличиваем изображение при наведении */
 }
 
+/* Класс для увеличенного изображения */
+.full-width {
+    position: fixed; /* Фиксируем изображение на экране */
+    top: 5;
+    left: 5;
+    width: 100vw; /* Устанавливаем ширину в 100% от ширины окна */
+    height: auto;
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы изображение было поверх других элементов */
+}
 
 /* Стили для раздела Компетенции */
 
@@ -163,7 +173,7 @@ body {
 }
 
 
-/* Стили для раздле Отзывы */
+/* Стили для разделе Отзывы */
 .quote {
   padding-top: 20px;
   padding-left: 40px;
@@ -293,7 +303,7 @@ footer {
         /* max-width: calc(100% - 10px); */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
     }
-    /* .menu {
+    .menu {
         display: none;
         position: absolute;
         top: 50px;
@@ -301,7 +311,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 20px;
         border-radius: 10px;
-      } */
+      }
       
       .menu ul {
         list-style: none;
@@ -343,15 +353,53 @@ footer {
         font-size: 16; /* Уменьшаем размер текста абзацев на мобильных устройствах */
     }
 
+    .about__projects__list {
+      flex-direction: column; /* Изменяем направление на вертикальное для мобильных устройств */
+      align-items: center;
+      gap: 10px; /* Отступ между элементами списка */
+  }
+  
+  .about__projects__list_item {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.intro__h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
     .body_container_image {
         flex-basis: auto; /* Убираем фиксированную ширину для изображения на мобильных устройствах */
-        width: 100%; /* Занимаем всю ширину контейнера на мобильных устройствах */
-        justify-content: center; /* Центрируем изображение по горизонтали */
-        align-items: center; /* Центрируем изображение по вертикали, если нужно */
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .body_container_image .image {
-        width: 100%; /* Изображение занимает всю ширину контейнера на мобильных устройствах */
-        height: auto; /* Сохраняет пропорции изображения */
+        width: 100%;
+        height: auto;
     }
+
+    .quote p,
+    .quote cite {
+      font-size: 16px;
+      line-height: 18px;
+   }
+  .blok-competencies__list-1_item,
+  .blok-competencies__list-2_item {
+      margin-left: 40px;
+}
+}
+
+@media (max-width: 480px) {
+  .intro__h1 {
+      font-size: 1.2rem;
+  }
+
+  .about__projects__list_item {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
 }
