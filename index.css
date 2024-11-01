@@ -148,18 +148,30 @@ footer {
             display: none; /* Скрываем обычное меню на мобильных устройствах */
         }
     
-        .burger-menu {
+        .header {
+            padding-bottom: 40px;
+        }
+            .burger-menu {
             display: flex; /* Показываем бургер-меню на мобильных устройствах */
             position: absolute;
             top: 10px;
             left: 10px;
-            z-index: 10;
+            z-index: 10; 
         }
-    
-        .menu {
-            display: none; /* Скрываем меню по умолчанию */
+        
+        .burger-icon {
+            cursor: pointer; /* Указатель при наведении на иконку */
+            display: flex; /* Используем Flexbox для расположения линий */
+            flex-direction: column; /* Располагаем линии вертикально */
+            gap: 5px; /* Промежуток между линиями */
         }
-    
+        
+        .burger-icon span {
+            width: 30px; /* Ширина линии */
+            height: 4px; /* Высота линии */
+            background-color: black; /* Цвет линий */
+            transition: all 0.3s ease; /* Плавный переход для анимации */
+        }
         .menu.active {
             display: block; /* Показываем меню при активном состоянии */
             position: absolute; /* Позиционируем меню */
