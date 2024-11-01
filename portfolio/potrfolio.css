@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 200px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #abc3f7; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link__active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+
+/* Заголовки и блоки */
+.intro {
+  text-align: center;
+  padding: 40px 20px 0px;
+}
+
+.intro__h1 {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
+
+.about__projects,
+.block__projects,
+.blok-competencies {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #d3ddfc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+}
+
+.about__projects {
+  padding: 20px; /* Отступы вокруг секции */
+}
+
+.about__projects__list {
+  display: flex; /* Используем Flexbox для расположения пунктов списка в ряд */
+  justify-content: space-between; /* Равномерно распределяем пункты по ширине */
+  list-style-type: none; /* Убираем стандартные маркеры списка */
+  padding: 0; /* Убираем отступы у списка */
+}
+
+.about__projects__list_item {
+  flex: 1; /* Каждый элемент занимает равное пространство */
+  margin: 0 10px; /* Отступы между пунктами списка */
+  padding: 10px; /* Внутренние отступы для удобства чтения */
+  background-color: #f0f0f0; /* Цвет фона для элементов списка */
+  border-radius: 5px; /* Скругление углов для элементов списка */
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8); /* Легкая тень для глубины */
+  text-align: center; /* Центрируем текст внутри элементов списка */
+}
+
+/* Стили для раздела с изображениями */
+
+.block__projects {
+  display: flex; /* Используем Flexbox для расположения изображений в ряд */
+  justify-content: space-between; /* Равномерно распределяем изображения по ширине */
+  align-items: center; /* Выравниваем изображения по центру по вертикали */
+  margin: auto;
+  padding: 40px; /* Отступы вокруг секции */
+  flex-wrap: wrap; /* Позволяем изображениям переноситься на следующую строку при необходимости */
+}
+
+.block__projects__image {
+  max-width: 30%; /* Ограничиваем максимальную ширину изображений до 30% */
+  height: auto; /* Сохраняем пропорции изображения */
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8); /* Добавляем тень для глубины */
+  transition: transform 0.3s ease; /* Плавный переход для анимации */
+}
+
+.block__projects__image:hover {
+  transform: scale(1.1); /* Увеличиваем изображение при наведении */
+}
+
+
+/* Стили для раздела Компетенции */
+
+.blok-competencies_h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.blok-competencies__list,
+.blok-competencies__list-1,
+.blok-competencies__list-2 {
+  list-style-type: none; /* Убираем маркеры у списка */
+  padding: 0;
+}
+
+.blok-competencies__list {
+  padding: 0px 40px 0px 30px;
+}
+.blok-competencies__list-1_item,
+.blok-competencies__list-2_item {
+  margin-left: 100px;
+}
+
+.blok-competencies__list-1_item,
+.blok-competencies__list-2_item,
+.blok-competencies__list__item {
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+
+.blok-competencies__list__item::marker {
+  content: '🔅'; /* Заменяем маркер на звездочку */
+  color: #FFD700; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+.blok-competencies__list-1_item::marker,
+.blok-competencies__list-2_item::marker  {
+  content: '★'; /* Заменяем маркер на звездочку */
+  color: #ff8800; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+
+
+/* Стили для раздле Отзывы */
+.quote {
+  padding-top: 20px;
+  padding-left: 40px;
+  border-left: 4px solid #e2e2e2;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+.quote p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  color: #091422;
+}
+.quote cite {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #163053;
+}
+
+/* Анимации */
+.experience-block {
+  transition: background-color 0.3s ease; /* Плавный переход для цвета фона */
+}
+.experience-block:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+  background-color: #ffffff; /* Изменяем цвет фона на светло-голубой */
+
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8)
+}
+
+/* Стили для формы */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2e0c79;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #af1a1a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  }

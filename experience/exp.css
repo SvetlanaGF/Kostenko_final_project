@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 200px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #abc3f7; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link__active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+
+
+/* Заголовки и блоки */
+.intro {
+  text-align: center;
+  padding: 40px 20px 0px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.experience {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.experience-block {
+  background-color: #d3ddfc;
+  margin: 20px 0;
+  padding: 20px 20px 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+}
+
+.experience-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.experience-block__job-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.experience-block__list {
+   list-style-type: none; /* Убираем маркеры у списка */
+   padding-left: 0; /* Убираем отступы у списков */
+}
+
+.experience-block__list_item::marker {
+  content: '🔅'; /* Заменяем маркер на звездочку */
+  color: #ff8800; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+
+.experience-block__list_item {
+  padding: 0px 40px 0px 10px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+
+/* Анимации */
+.experience-block {
+  transition: background-color 0.3s ease; /* Плавный переход для цвета фона */
+}
+.experience-block:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+  background-color: #ffffff; /* Изменяем цвет фона на светло-голубой */
+
+}
+
+footer {
+text-align: center;
+padding: 20px;
+background-color: rgba(46, 12, 121, 0.8);
+color: #fff;
+bottom: 0;
+width: 100%;
+}

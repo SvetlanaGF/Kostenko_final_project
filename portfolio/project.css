@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 200px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #abc3f7; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link__active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+  
+  
+  /* Заголовки и блоки */
+  .intro {
+    text-align: center;
+    padding: 40px 20px 0px;
+  }
+  
+  .intro__h1 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .about__project {
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d3ddfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+  }
+  
+  .about__project__title {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+    text-align: center;
+  }
+  
+  .about__project__text {
+    margin: 20px;
+    padding: 30px;
+    background-color: #cccbcb;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+    text-align: left;
+  }
+  /* Стили для раздела с изображениями */
+  
+   .block__projects {
+    align-items: center; /* Выравниваем изображения по центру по вертикали */
+    margin: auto;
+
+  }
+
+  .block__projects_img {
+    display: block; /* Устанавливаем блочный элемент */
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto; /* Центрируем изображение */
+    box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8); /* Добавляем тень для глубины */
+  }
+  
+  .project_img {
+    margin: 20px;
+  }
+  
+   footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(46, 12, 121, 0.8);
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    }

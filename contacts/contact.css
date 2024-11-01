@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 20px;
+}
+
+.header__logo {
+  z-index: 1; /* Устанавливаем z-index для логотипа */
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+  justify-content: space-between; /* Равномерно распределяем пункты меню */
+  flex-grow: 1; /* Позволяем навигации занимать оставшееся пространство */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 100px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #7ba0f0; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link__active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+
+main {
+  padding: 20px 20px 0px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 24px;
+  color: #2e0c79;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 18px;
+  color: #2e0c79;
+  margin-bottom: 0px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+  text-align: center;
+}
+
+.contact-item h2 {
+  color: #2e0c79;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-item p {
+  font-size: 16px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #2e0c79;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 0px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #cdceee;
+  margin-bottom: 10px;
+}
+.contact-form textarea {
+  height: 40px; /* Уменьшаем высоту текстового поля */
+  /*resize: none;  Запрещаем изменение размера пользователем */
+}
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2e0c79;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #af1a1a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #fff;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+

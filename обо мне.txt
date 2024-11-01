@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Светлана Костенко – техспец по Геткурс</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" type="image/png" href="img/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">Светлана Костенко <br>техспец по Геткурс</div>
+      <nav class="header__nav">
+          <ul class="header__list">
+              <li class="header__item"><a class="header__link" href="../index.html">Главная</a></li>
+              <li class="header__item"><a class="header__link__active" href="../about/about.html">Обо мне</a></li>
+              <li class="header__item"><a class="header__link" href="../experience/exp.html">Опыт работы</a></li>
+              <li class="header__item"><a class="header__link" href="../services/services.html">Перечень услуг</a></li>
+              <li class="header__item"><a class="header__link" href="../portfolio/potrfolio.html">Портфолио</a></li>
+              <li class="header__item"><a class="header__link" href="../contacts/contact.html">Контакты</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <!-- Основной блок страницы -->
+    <main class="about-container">
+      <section class="introduction">
+        <h1>Привет, меня зовут Светлана Костенко</h1>
+        <p>Я технический специалист (администратор) для онлайн-школы, онлайн-курсов.<br>
+        Куратор на курсах онлайн-образования.</p>
+      </section>
+
+      <section class="specialization">
+        <h2>Моя специализация</h2>
+        <p>Настройки платформы Геткурс (Getcourse).
+          Основные направления:</p>
+            <ul class="specialization_list">
+              <li class="specialization_list_item">работа с рассылками;</li>
+              <li class="specialization_list_item">вёрстка лендингов:</li>
+                <ul class="specialization_list__platform">
+                  <li class="specialization_list__platform__item">на Tilda (Тильда)</li>
+                  <li class="specialization_list__platform__item">на Getcourse (Геткурс);</li>
+                </ul>  
+              <li class="specialization_list_item">стилизация личных кабинетов</li>
+              <li class="specialization_list_item">оформление учебного контента</li>
+          </ul>
+        
+      </section>
+
+      <section class="block__art__and__cience">
+        <h2>Комбинация искусства и науки</h2>
+        <!-- class="block__art__and__cience__h2" -->
+        <p class="block__art__and__cience__p">
+          Создание сайтов для меня (с использованием конструктора или кода) – это не просто технический процесс, а увлекательное занятие, которое сочетает в себе творчество, технологии и взаимодействие с людьми!</p>
+          <ul class="block__art__and__cience__list">
+            <li class="block__art__and__cience__item">Комбинация искусства и науки: вёрстка требует, как художественного взгляда, так и технических знаний о кодировании.</li>
+
+            <li class="block__art__and__cience__item">Решение задач: приходится сталкиваться с различными вызовами. Такими как адаптация лендинга под разные устройства или оптимизация загрузки страниц. Когда решение найдено это приносит радость побольше кусочка торта (ну или что вам приносит радость?).</li>
+            
+            <li class="block__art__and__cience__item">Помощь пользователям: правильная верстка улучшает взаимодействие с сайтом. Мне нравится осознавать, что я могу создавать удобные интерфейсы, которые облегчают навигацию и поиск информации. Я могу влиять на создание качественного продукта.</li>
+            
+            <li class="block__art__and__cience__item">Постоянное обучение (О! Это моё любимое – люблю учиться): технологии верстки постоянно развиваются. Это требует регулярного обновления знаний. В этой сфере постоянно нужно бежать, чтобы оставаться на одном месте. Всегда есть что-то новое для изучения.</li>
+            
+            <li class="block__art__and__cience__item">Работа в команде: когда вёрстка осуществляется в рамках команды дизайнеров и разработчиков, можно получить возможность для обмена идеями и совместного творчества.</li>
+            
+            <li class="block__art__and__cience__item">Визуальная привлекательность: завершение проекта и вид готового сайта/лендинга приносит чувство гордости и удовлетворения от проделанной работы. У меня так, а у вас?</li>
+            
+            <li class="block__art__and__cience__item">Разнообразие проектов: каждый проект уникален. Это делает мою работу разнообразной и интересной.</li>
+            
+            <li class="block__art__and__cience__item">Возможность фриланса: вёрстка предоставляет возможность работать удаленно. Свобода в выборе места работы и графика. И да, работа во время отдыха.</li>
+            
+            <li class="block__art__and__cience__item">Долгосрочные результаты: хорошо сверстанный сайт служит долго и приносит пользу. Это делает работу значимой. И это круто!</li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="Telegram-section">
+        <h2>Канал в Telegram</h2>
+        <p>
+          Свои успехи в профессии, в обучении, отзывы на мою работу, мысли о профессиональном развитии и не только, я публикую в своём канале в Telegram.</p>
+          <p>Присоединяйтесь: <a href="https://t.me/success_comes">Сайт / Лендинг | Геткурс / Тильда | Костенко Светлана</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+      <p>© 2024 Моё Портфолио. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключение JS -->
+    <script src="about.js"></script>
+
+  </body>
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 200px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #7ba0f0; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link__active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+
+/* Основные стили для страницы "Обо мне" */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.introduction,
+.specialization,
+.block__art__and__cience {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+}
+
+.introduction {
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+
+.specialization {
+  margin: 20px 0px;
+  padding: 20px 40px;
+}
+
+.block__art__and__cience {
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+.Telegram-section {
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {  
+  font-size: 1.4rem;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #2e0c79;
+  margin-bottom: 15px;
+}
+.specialization_list,
+.specialization_list__platform,
+.block__art__and__cience__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  padding: 0;
+}
+
+.specialization_list {
+  margin-left: 100px;
+}
+
+.specialization_list__platform {
+  margin-left: 130px;
+}
+
+.specialization_list_item,
+.specialization_list__platform__item {
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+
+.specialization_list_item::marker {
+  content: '🔅'; /* Заменяем маркер на звездочку */
+  color: #FFD700; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+.specialization_list__platform__item::marker  {
+  content: '★'; /* Заменяем маркер на звездочку */
+  color: #ff8800; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+.block__art__and__cience__list {
+  padding: 0px 60px 0px 40px;
+}
+.block__art__and__cience__item {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.block__art__and__cience__item::marker {
+  content: '🔅'; /* Заменяем маркер на звездочку */
+  color: #FFD700; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+
+
+.about-container p {
+  font-family: "Roboto", sans-serif;
+  color: #2e0c79;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+
+.Telegram-section {
+  background-color: #e0e0e0;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #fff;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+

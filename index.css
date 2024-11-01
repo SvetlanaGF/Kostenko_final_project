@@ -1,0 +1,154 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.header {
+    font-family: 'PontanoSans-Regular', Arial, sans-serif;
+    background-color: rgba(46, 12, 121, 0.8);
+    color: #ffffff;
+    display: flex; /* Используем Flexbox для расположения элементов рядом */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    padding: 10px 20px;
+}
+
+.header__logo {
+    z-index: 1; /* Устанавливаем z-index для логотипа */
+}
+
+.header__nav {
+    display: flex;
+    margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+    justify-content: space-between; /* Равномерно распределяем пункты меню */
+    flex-grow: 1; /* Позволяем навигации занимать оставшееся пространство */
+}
+
+.header__list {
+    list-style-type: none; /* Убираем маркеры у списка */
+    display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+    margin-left: 100px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: #7ba0f0; /* Цвет текста при наведении */
+    text-decoration: underline; /* Подчеркивание текста при наведении */
+    text-decoration-thickness: 3px;
+  }
+  
+.header__link__active {
+    color: #bfb0df; /* Цвет для активного пункта меню */
+    text-decoration-thickness: 3px;
+  }
+
+body {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+}
+
+.body_container_text {
+    display: block;
+    /* margin: 20px 50px; */
+    margin-left: 50px;
+} 
+.body_container_image {
+    display: block;
+} 
+h1, h2, p {
+    margin-bottom: 20px;
+    color: #110134;
+}
+h1, h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+.body_container {
+    display: flex; /* Используем flexbox для расположения секций рядом */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    gap: 15px; /* Отступ между секциями */
+}
+.body_container_text {
+    flex: 1; /* Позволяем тексту занимать оставшееся пространство */
+}
+
+.body_container_image {
+    flex: 0 0 50%; /* Занимает 50% ширины контейнера, можно изменить на нужный процент */
+    height: 100%; /* Занимает всю высоту родительского контейнера */
+    display: flex; /* Используем Flexbox для выравнивания содержимого */
+    justify-content: flex-end; /* Выравниваем содержимое по правому краю */
+    align-items: flex-start; /* Выравниваем содержимое по верхнему краю */
+}
+
+.body_container_image .image {
+    width: 80%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(46, 12, 121, 0.8);
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    }
+.block_footer {
+    font-size: 1em;
+    color: #ffffff;
+    padding-bottom: 10px;
+    }
+
+/* Медиазапрос для планшетов */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: flex-start; /* Выравниваем элементы по левому краю */
+    }
+
+    .header__item {
+        margin-left: 0; /* Убираем отступы между пунктами меню */
+        margin-top: 10px; /* Добавляем отступ сверху между пунктами */
+    }
+
+    .body_container {
+        flex-direction: column; /* Меняем направление на вертикальное */
+    }
+
+    .body_container_image {
+        flex: none; /* Убираем фиксированную ширину */
+        width: 100%; /* Занимаем всю ширину контейнера */
+        justify-content: center; /* Центрируем изображение */
+    }
+
+    .body_container_image .image {
+        width: 100%; /* Изображение занимает всю ширину контейнера */
+        height: auto; /* Сохраняет пропорции изображения */
+    }
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 2em; /* Уменьшаем размер заголовков */
+    }
+
+    p {
+        font-size: 1.5em; /* Уменьшаем размер текста абзацев */
+    }
+
+    .header__logo {
+        font-size: 1.5em; /* Уменьшаем размер логотипа */
+    }
+}

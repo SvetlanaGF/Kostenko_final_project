@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A8B5DE;
+  color: #2e0c79;
+}
+
+.header {
+  font-family: 'PontanoSans-Regular', Arial, sans-serif;
+  background-color: rgba(46, 12, 121, 0.8);
+  color: #ffffff;
+  display: flex; /* Используем Flexbox для расположения элементов рядом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 10px 230px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto; /* Навигационное меню поставлено в правый край экрана */
+}
+
+.header__list {
+  list-style-type: none; /* Убираем маркеры у списка */
+  display: flex; /* Используем Flexbox для списка */
+}
+
+.header__item {
+  margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.header__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #7ba0f0; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
+
+.header__link-active {
+  color: #bfb0df; /* Цвет для активного пункта меню */
+  text-decoration-thickness: 3px;
+}
+
+/* Основные стили для страницы "Обо мне" */
+.about-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.introduction,
+.specialization,
+.block__art__and__cience,
+.Telegram-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+}
+.Telegram-section {
+  background-color: #e0e0e0;
+}
+
+.introduction,
+.specialization,
+.block__art__and__cience,
+.Telegram-section {
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {  
+  font-size: 1.4rem;
+}
+
+.specialization_list,
+.specialization_list__platform,
+.block__art__and__cience__list {
+   list-style-type: none; /* Убираем маркеры у списка */
+   padding-left: 0; /* Убираем отступы у списков */
+}
+
+.specialization_list_item,
+.specialization_list__platform__item {
+   padding-left: 8px; 
+   margin-bottom: 5px; 
+}
+.specialization_list,
+.block__art__and__cience__list {
+  padding: 0px 40px 0px 20px;
+}
+.specialization_list_item::marker {
+  content: '★'; /* Заменяем маркер на звездочку */
+  color: #FFD700; /* Цвет звездочки (золотой) */
+  font-size: 1.1em; /* Размер звездочки */
+}
+.specialization_list__platform__item::marker  {
+  content: '💥'; /* Заменяем маркер на звездочку */
+  color: #ff8800; /* Цвет звездочки (золотой) */
+  font-size: 0.8rem; /* Размер звездочки */
+}
+
+.specialization_list__platform {
+  padding: 0px 60px 0px 140px;
+}
+.block__art__and__cience__item {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.block__art__and__cience__item::marker {
+  content: '🔅'; /* Заменяем маркер на звездочку */
+  color: #ff8800; /* Цвет звездочки (золотой) */
+  font-size: 0.9em; /* Размер звездочки */
+}
+span {
+  text-decoration: underline double #ff8800;
+  text-decoration-thickness: 2px;
+}
+/* Стили для абзацев */
+.about-container p {
+   font-family: "Roboto", sans-serif;
+   line-height:1.2; 
+   margin-bottom:15px; 
+   font-size:20px; 
+}
+
+/* Стили для подвала */
+footer {
+   text-align:center; 
+   padding:20px; 
+   background-color:rgba(46,12,121,0.8); 
+   color:#fff; 
+}
