@@ -2,15 +2,24 @@
 
 console.log('Скрипт загружен');
 
-// Находим элементы бургер-меню и меню
-const burgerMenu = document.querySelector('.burger-menu');
-const menu = document.querySelector('.menu');
+// Получаем все ссылки в бургер-меню
+const links = document.querySelectorAll('.burger__link');
 
-// Добавляем обработчик события клика на бургер-меню
-burgerMenu.addEventListener('click', () => {
- // Переключаем класс active для отображения/скрытия меню
-    menu.classList.toggle('active');
+// Добавляем обработчик события на каждую ссылку
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        // Удаляем класс активного состояния у всех ссылок
+        links.forEach(l => l.classList.remove('header__link__active'));
+        
+        // Добавляем класс активного состояния к текущей ссылке
+        this.classList.add('header__link__active');
+        
+        // Закрытие меню (если нужно)
+        const menu = document.querySelector('.menu');
+        menu.classList.remove('active'); // Убедитесь, что у вас есть класс active для управления видимостью меню
+    });
 });
+
 
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
