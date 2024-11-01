@@ -48,7 +48,11 @@ body {
   color: #bfb0df; /* Цвет для активного пункта меню */
   text-decoration-thickness: 3px;
 }
-  
+
+/* Скрываем меню по умолчанию */
+.menu {
+  display: none; /* Скрываем бургер-меню по умолчанию */
+}
   
   /* Заголовки и блоки */
   .intro {
@@ -115,3 +119,113 @@ body {
     bottom: 0;
     width: 100%;
     }
+
+    
+
+    @media (max-width: 768px) {
+      .header__logo {
+          display: none; /* Скрываем логотип на мобильных устройствах */
+      }
+  
+      .header__nav {
+          display: none; /* Скрываем обычное меню на мобильных устройствах */
+      }
+  
+      .header {
+          padding-bottom: 40px;
+      }
+      .burger-menu {
+          display: flex; /* Показываем бургер-меню на мобильных устройствах */
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 10; 
+      }
+      
+      .burger-icon {
+          cursor: pointer; /* Указатель при наведении на иконку */
+          display: flex; /* Используем Flexbox для расположения линий */
+          flex-direction: column; /* Располагаем линии вертикально */
+          gap: 5px; /* Промежуток между линиями */
+      }
+      
+      .burger-icon span {
+          width: 30px; /* Ширина линии */
+          height: 4px; /* Высота линии */
+          background-color: black; /* Цвет линий */
+          transition: all 0.3s ease; /* Плавный переход для анимации */
+      }
+      .menu.active {
+          display: block; /* Показываем меню при активном состоянии */
+          position: absolute; /* Позиционируем меню */
+          top: 50px; /* Располагаем ниже бургер-меню */
+          left: 10px; /* Выравниваем влево */
+          background-color: #2e0c79;
+          padding: 20px; /* Отступы внутри меню */
+          border-radius: 10px;
+           /* Ограничиваем ширину меню */
+          /* max-width: calc(100% - 10px); */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для глубины */
+      }
+      /* .menu {
+          display: none;
+          position: absolute;
+          top: 50px;
+          left: 10px;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+        } */
+        
+        .menu ul {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .menu ul li {
+          margin: 10px 0;
+        }
+        
+        .menu ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+        }
+        
+        /* Анимация для открытия меню */
+        .menu.open {
+          display: block;
+        }
+
+        .body_container {
+          flex-direction: column; /* Меняем направление на вертикальное для мобильных устройств */
+          align-items: center; /* Центрируем элементы по горизонтали */
+          gap: 10px; /* Уменьшаем отступ между секциями */
+      }
+  
+      .body_container_text {
+          margin-left: 0; /* Убираем левый отступ на мобильных устройствах */
+          text-align: center; /* Центрируем текст на мобильных устройствах */
+          padding: 0 20px; /* Добавляем отступы по бокам для удобства чтения */
+      }
+  
+      h1, h2 {
+          font-size: 20; /* Уменьшаем размер заголовков на мобильных устройствах */
+      }
+  
+      p {
+          font-size: 16; /* Уменьшаем размер текста абзацев на мобильных устройствах */
+      }
+  
+      .body_container_image {
+          flex-basis: auto; /* Убираем фиксированную ширину для изображения на мобильных устройствах */
+          width: 100%; /* Занимаем всю ширину контейнера на мобильных устройствах */
+          justify-content: center; /* Центрируем изображение по горизонтали */
+          align-items: center; /* Центрируем изображение по вертикали, если нужно */
+      }
+  
+      .body_container_image .image {
+          width: 100%; /* Изображение занимает всю ширину контейнера на мобильных устройствах */
+          height: auto; /* Сохраняет пропорции изображения */
+      }
+  }
