@@ -55,7 +55,7 @@
 
 <body>
     <div class="container">
-        <h1>Спасибо за ваш отзыв!</h1>
+        <h1>Спасибо!</h1>
         <p>Ваши отзывы помогают мне быть лучше</p>
         <button class="button" onclick="window.location.href='potrfolio.html'">Вернуться назад</button>
     </div>

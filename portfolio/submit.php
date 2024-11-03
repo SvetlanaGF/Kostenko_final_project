@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получаем данные из формы и удаляем лишние пробелы
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
-    $review = trim($_POST['message']);
+    $review = trim($_POST['review']);
 
     // Проверяем, что все поля заполнены
     if (!empty($name) && !empty($email) && !empty($review)) {
@@ -14,12 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             try {
                 // Подготовим SQL-запрос для вставки данных
-                $sql = "INSERT INTO orders (name, email, message) VALUES (:name, :email, :message)";
+                $sql = "INSERT INTO orders (name, email, review) VALUES (:name, :email, :review)";
                 $stmt = $pdo->prepare($sql);
                 // Привязываем значения
                 $stmt->bindParam(':name', $name);
                 $stmt->bindParam(':email', $email);
-                $stmt->bindParam(':message', $review);
+                $stmt->bindParam(':review', $review);
 
                 // Выполняем запрос
                 $stmt->execute();
