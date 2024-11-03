@@ -16,7 +16,7 @@ body {
   color: #ffffff;
   display: flex; /* Используем Flexbox для расположения элементов рядом */
   align-items: center; /* Выравниваем элементы по центру по вертикали */
-  padding: 10px 230px;
+  padding: 10px 200px;
 }
 
 .header__nav {
@@ -34,7 +34,7 @@ body {
 }
 
 .header__link {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   text-transform: uppercase;
   margin-bottom: 15px;
 }
