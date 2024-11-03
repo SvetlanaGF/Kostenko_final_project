@@ -28,15 +28,18 @@
         }
 
         h1 {
+            font-family: 'Inter', Arial, sans-serif;
             color: #2e0c79;
         }
 
         p {
+            font-family: 'Inter', Arial, sans-serif;
             font-size: 18px;
             color: #2e0c79;
         }
 
         .button {
+            font-family:Arial, sans-serif;
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #2e0c79;
@@ -55,9 +58,9 @@
 
 <body>
     <div class="container">
-        <h1>Спасибо за ваш отзыв!</h1>
-        <p>Ваши отзывы помогают мне быть лучше</p>
-        <button class="button" onclick="window.location.href='potrfolio.html'">Вернуться назад</button>
+        <h1>Заявка отправлена!</h1>
+        <p>Отвечу вам в ближайшее время.<br>Обычно, это не занимает больше часа.</p>
+        <button class="button" onclick="window.location.href='contacts.html'">Вернуться назад</button>
     </div>
 </body>
 
