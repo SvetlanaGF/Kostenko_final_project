@@ -56,12 +56,9 @@ body {
 }
 
 /* Заголовки и блоки */
-.intro {
-  text-align: center;
-  padding: 40px 20px 0px;
-}
 
 .intro__h1 {
+  font-family: 'Intro', Arial, sans-serif;
   font-size: 2rem;
   margin: 20px;
   text-align: center;
@@ -140,6 +137,7 @@ body {
 /* Стили для раздела Компетенции */
 
 .blok-competencies_h2 {
+  font-family: 'Intro', Arial, sans-serif;
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
@@ -187,6 +185,7 @@ body {
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 .quote p {
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -195,6 +194,7 @@ body {
   color: #091422;
 }
 .quote cite {
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -240,6 +240,8 @@ form textarea {
 }
 
 form button {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
   padding: 10px;
   margin-bottom: 10px;
   background-color: #2e0c79;
@@ -254,6 +256,7 @@ form button:hover {
 }
 
 footer {
+  font-family: 'Inter', Arial, sans-serif;
   text-align: center;
   padding: 20px;
   background-color: rgba(46, 12, 121, 0.8);

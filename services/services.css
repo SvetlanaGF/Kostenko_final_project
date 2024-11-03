@@ -62,12 +62,14 @@ body {
 }
 
 .intro h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 1.2rem;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 1.2rem;
 }
 .intro a {
   color: #ffffff;
@@ -87,11 +89,13 @@ body {
 }
 
 .experience-block h2 {
+  font-family: 'Inter', Arial, sans-serif;
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
 .experience-block p {
+  font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 1rem;
 }
 .experience-block a {
@@ -109,6 +113,7 @@ body {
 
 
 footer {
+  font-family: 'Inter', Arial, sans-serif;
   text-align: center;
   padding: 20px;
   background-color: rgba(46, 12, 121, 0.8);

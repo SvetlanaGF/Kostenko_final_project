@@ -151,6 +151,7 @@ span {
 
 /* Стили для подвала */
 footer {
+  font-family: 'Inter', Arial, sans-serif;
    text-align:center; 
    padding:20px; 
    background-color:rgba(46,12,121,0.8); 

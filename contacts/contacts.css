@@ -68,12 +68,14 @@ main {
   }
   
   .contact-header h2 {
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 24px;
     color: #2e0c79;
     margin-bottom: 10px;
   }
   
   .contact-header p {
+    font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 18px;
     color: #2e0c79;
     margin-bottom: 0px;
@@ -102,6 +104,7 @@ main {
   }
   
   .contact-item p {
+    font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 16px;
   }
 
@@ -143,16 +146,19 @@ main {
   }
   
   .contact-form button {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
     display: block;
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: #2e0c79;
     color: #fff;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
   }
+
   
   .contact-form button:hover {
     background-color: #af1a1a;
