@@ -5,19 +5,20 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito Sans', Arial, sans-serif;
     background-color: #A8B5DE;
     color: #2e0c79;
   }
   
   .header {
-    font-family: 'PontanoSans-Regular', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     background-color: rgba(46, 12, 121, 0.8);
     color: #ffffff;
     display: flex; /* Используем Flexbox для расположения элементов рядом */
     align-items: center; /* Выравниваем элементы по центру по вертикали */
     padding: 10px 200px;
   }
+  
   
   .header__nav {
     display: flex;
