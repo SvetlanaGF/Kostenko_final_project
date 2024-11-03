@@ -12,6 +12,7 @@ burgerMenu.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
+// Проверяем , что заполнены все поля и сообщаем, если отправка прошла успешно
 
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
