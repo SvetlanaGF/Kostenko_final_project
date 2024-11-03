@@ -73,7 +73,11 @@ body {
 }
 .intro a {
   color: #ffffff;
-}
+  }
+  .intro a:hover {
+    text-decoration: underline; /* Подчеркивание текста при наведении */
+    text-decoration-thickness: 3px;
+  }
 .experience {
     max-width: 1000px;
     margin: 0 auto;
@@ -111,6 +115,10 @@ body {
     transition: 0.3s ease;
 }
 
+.mailings_more:hover {
+  text-decoration: underline; /* Подчеркивание текста при наведении */
+  text-decoration-thickness: 3px;
+}
 
 footer {
   font-family: 'Inter', Arial, sans-serif;

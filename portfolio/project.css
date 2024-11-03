@@ -110,11 +110,15 @@ body {
     box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
 }
 
-
   .project_img {
     margin: 20px;
   }
   
+  .about__project__text__back:hover {
+    text-decoration: underline; /* Подчеркивание текста при наведении */
+    text-decoration-thickness: 3px;
+  }
+
    footer {
     font-family: 'Intro', Arial, sans-serif;
     text-align: center;

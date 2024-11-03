@@ -1,13 +1,3 @@
-document.getElementById('learn-more').addEventListener('click', function() {
-    const userConfirmed = confirm('Привет, помогу настроить онлайн-школу на Геткурс (GetCourse). Хотите перейти на страницу "Портфолио"?');
-    
-    if (userConfirmed) {
-        // Переход на страницу "Портфолио"
-        window.location.href = 'portfolio/potrfolio.html';
-    }
-});
-
-
 // Плавная анимация кнопки при загрузке страницы
 window.onload = function() {
     const button = document.getElementById('learn-more');
@@ -17,6 +7,16 @@ window.onload = function() {
         button.style.opacity = '1';
     }, 500);
 };
+
+// Предложение перейти на страницу с Портфолио
+document.getElementById('learn-more').addEventListener('click', function() {
+    const userConfirmed = confirm('Привет, помогу настроить онлайн-школу на Геткурс (GetCourse). Хотите перейти на страницу "Портфолио"?');
+    
+    if (userConfirmed) {
+        // Переход на страницу "Портфолио"
+        window.location.href = 'portfolio/potrfolio.html';
+    }
+});
 
 // Бургер-меню
 
